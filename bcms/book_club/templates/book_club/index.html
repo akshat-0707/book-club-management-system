@@ -1,0 +1,14 @@
+{% extends "book_club/layout.html" %}
+
+{% block title %}Home | Book Club{% endblock %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+        <h1>Welcome back, {{ user.username }}</h1>
+        <p>Your clubs will appear here.</p>
+    {% else %}
+        <h1>Welcome to Book Club</h1>
+        <p>Create or join a club, pick books, schedule meetings and discuss.</p>
+        <a href="{% url 'login' %}">Log in</a> or <a href="{% url 'register' %}">register</a>
+    {% endif %}
+{% endblock %}

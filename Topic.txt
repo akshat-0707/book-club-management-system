@@ -1,0 +1,4 @@
+Online Book Club Management Platform
+Book clubs need to coordinate reading selections, discussion meetings, member participation, and discussion topics across different books.
+Develop an interactive platform for managing book-club activities.
+Book selection; members; reading schedule; meetings; discussion topics; comments; participation.
