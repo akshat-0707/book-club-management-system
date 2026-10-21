@@ -1,0 +1,26 @@
+{% extends "book_club/layout.html" %}
+{% block title %}Clubs List{% endblock %}
+
+{% block body %}
+    <h1>Available Clubs</h1>
+    
+    <ul>
+        {% for club in clubs %}
+            <li>
+                <strong>{{ club.name }}</strong> - {{ club.description }}
+                
+                {% if club.id in joined_club_ids %}
+                    <span style="color: green; font-weight: bold; margin-left: 10px;">✓ Joined</span>
+                {% else %}
+                    <!-- Show Join Form if they haven't joined yet -->
+                    <form action="{% url 'join_club' club.id %}" method="POST" style="display:inline; margin-left: 10px;">
+                        {% csrf_token %}
+                        <button type="submit">Join Club</button>
+                    </form>
+                {% endif %}
+            </li>
+        {% empty %}
+            <p>No clubs available yet.</p>
+        {% endfor %}
+    </ul>
+{% endblock %}

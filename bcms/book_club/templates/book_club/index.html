@@ -5,7 +5,20 @@
 {% block body %}
     {% if user.is_authenticated %}
         <h1>Welcome back, {{ user.username }}</h1>
+        <a href="{% url 'create' %}">create a club</a>
+        <a href="{% url 'clubs' %}">join a club</a>
         <p>Your clubs will appear here.</p>
+        <ul>
+            {% for club in clubs %}
+                <li>
+                    {% if club %}
+                    <strong>{{ club }}</strong>
+                    {% else %}
+                    <p>No clubs available yet.</p>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
     {% else %}
         <h1>Welcome to Book Club</h1>
         <p>Create or join a club, pick books, schedule meetings and discuss.</p>
