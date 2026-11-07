@@ -48,6 +48,6 @@ The **Online Book Club Management Platform** solves this by providing a unified 
 
 | Member Name | Registration Number | Role & Primary Contributions |
 | :--- | :--- | :--- |
-| **[S.K Asif]** | `[12624764]` | **System Requirements, Research & UI/UX Wireframing:** Researched book club domain workflows, planned navigation flow and module hierarchy, gathered content assets, and authored project documentation/README. |
-| **[Nidhi]** | `[12624738]` | **Frontend Semantic Structuring:** Developed foundational HTML layouts across core pages (`books.html`, `members.html`, `schedule.html`, `meetings.html`, `discussions.html`, `participation.html`, `login.html`), forms, and structured tables. |
-| **[Your Name]** | `[12624748]` | **Interface Styling & JavaScript Logic:** Built
+| **S.K Asif** | `[12624764]` | **System Requirements, Research & UI/UX Wireframing:** Researched book club domain workflows, planned navigation flow and module hierarchy, gathered content assets, and authored project documentation/README. |
+| **Nidhi** | `[12624738]` | **Frontend Semantic Structuring:** Developed foundational HTML layouts across core pages (`books.html`, `members.html`, `schedule.html`, `meetings.html`, `discussions.html`, `participation.html`, `login.html`), forms, and structured tables. |
+| **Akshat** | `[12624748]` | **Interface Styling & JavaScript Logic:** Built
