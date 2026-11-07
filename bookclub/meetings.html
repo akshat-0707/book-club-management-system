@@ -2,10 +2,12 @@
 <html>
 
 <head>
-  <title>Meetings</title>
+  <title>Meetings - Page Turners Book Club</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  
   <header>
     <h1>Page Turners Book Club</h1>
     <nav>
@@ -13,12 +15,13 @@
       <a href="books.html">Books</a>
       <a href="members.html">Members</a>
       <a href="schedule.html">Schedule</a>
-      <a href="meetings.html">Meetings</a>
+      <a href="meetings.html" class="active">Meetings</a>
       <a href="discussions.html">Discussions</a>
       <a href="participation.html">Participation</a>
       <a href="login.html">Log out</a>
     </nav>
   </header>
+
   <main>
     <h2>Upcoming meetings</h2>
     <table>
@@ -27,29 +30,33 @@
         <th>Time</th>
         <th>Place</th>
         <th>Topic</th>
-        <th>RSVP</th>
+        <th>Action</th>
       </tr>
+
       <tr>
         <td>7 November</td>
         <td>5:00 PM</td>
         <td>Library Hall</td>
         <td>Prologue and Part One</td>
-        <td><button>Join</button></td>
+        <td><button id="join1" onclick="joinMeeting('join1')">Join</button></td>
       </tr>
+
       <tr>
         <td>14 November</td>
         <td>5:00 PM</td>
         <td>Library Hall</td>
         <td>Part Two, first half</td>
-        <td><button>Join</button></td>
+        <td><button id="join2" onclick="joinMeeting('join2')">Join</button></td>
       </tr>
+
       <tr>
         <td>21 November</td>
         <td>5:00 PM</td>
         <td>Online</td>
         <td>Part Two, second half</td>
-        <td><button>Join</button></td>
+        <td><button id="join3" onclick="joinMeeting('join3')">Join</button></td>
       </tr>
+
     </table>
 
     <h2>Past meetings</h2>
@@ -71,7 +78,10 @@
       </tr>
     </table>
   </main>
+
   <footer>CSE326 Project: Online Book Club Management Platform</footer>
+  
+  <script src="js/script.js"></script>
 </body>
 
 </html>
