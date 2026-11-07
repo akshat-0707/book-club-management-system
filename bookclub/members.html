@@ -2,10 +2,12 @@
 <html>
 
 <head>
-  <title>Member</title>
+  <title>Meetings - Page Turners Book Club</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  
   <header>
     <h1>Page Turners Book Club</h1>
     <nav>
@@ -13,54 +15,73 @@
       <a href="books.html">Books</a>
       <a href="members.html">Members</a>
       <a href="schedule.html">Schedule</a>
-      <a href="meetings.html">Meetings</a>
+      <a href="meetings.html" class="active">Meetings</a>
       <a href="discussions.html">Discussions</a>
       <a href="participation.html">Participation</a>
       <a href="login.html">Log out</a>
     </nav>
   </header>
+
   <main>
-    <h2>Club members</h2>
+    <h2>Upcoming meetings</h2>
     <table>
       <tr>
-        <th>Name</th>
-        <th>Role</th>
-        <th>Joined</th>
-        <th>Favourite genre</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Place</th>
+        <th>Topic</th>
+        <th>Action</th>
+      </tr>
+
+      <tr>
+        <td>7 November</td>
+        <td>5:00 PM</td>
+        <td>Library Hall</td>
+        <td>Prologue and Part One</td>
+        <td><button id="join1" onclick="joinMeeting('join1')">Join</button></td>
+      </tr>
+
+      <tr>
+        <td>14 November</td>
+        <td>5:00 PM</td>
+        <td>Library Hall</td>
+        <td>Part Two, first half</td>
+        <td><button id="join2" onclick="joinMeeting('join2')">Join</button></td>
+      </tr>
+
+      <tr>
+        <td>21 November</td>
+        <td>5:00 PM</td>
+        <td>Online</td>
+        <td>Part Two, second half</td>
+        <td><button id="join3" onclick="joinMeeting('join3')">Join</button></td>
+      </tr>
+
+    </table>
+
+    <h2>Past meetings</h2>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Book</th>
+        <th>Attendees</th>
       </tr>
       <tr>
-        <td>Aarav Sharma</td>
-        <td>Admin</td>
-        <td>August 2026</td>
-        <td>Fiction</td>
+        <td>10 October</td>
+        <td>Ikigai (final discussion)</td>
+        <td>5 members</td>
       </tr>
       <tr>
-        <td>Priya Verma</td>
-        <td>Discussion moderator</td>
-        <td>August 2026</td>
-        <td>Self-help</td>
-      </tr>
-      <tr>
-        <td>Rohan Mehta</td>
-        <td>Member</td>
-        <td>September 2026</td>
-        <td>Biography</td>
-      </tr>
-      <tr>
-        <td>Sneha Iyer</td>
-        <td>Member</td>
-        <td>September 2026</td>
-        <td>Mystery</td>
-      </tr>
-      <tr>
-        <td>Ahmed Singh</td>
-        <td>Member</td>
-        <td>October 2026</td>
-        <td>Fantasy</td>
+        <td>3 October</td>
+        <td>Ikigai (first discussion)</td>
+        <td>4 members</td>
       </tr>
     </table>
   </main>
+
   <footer>CSE326 Project: Online Book Club Management Platform</footer>
+  
+  <script src="js/script.js"></script>
 </body>
 
 </html>
